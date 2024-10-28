@@ -1,0 +1,17 @@
+#include <stdio.h>
+void main()
+{
+    int sum=0,i,n,weight[50];
+    float avg;
+    printf("Enter a number of students :");
+    scanf("%d",&n);
+    for(i=0;i<n;i++)
+    {
+        printf("enter a element ; %d",i);
+        scanf("%d",&weight[i]);
+        sum+=weight[i];
+    }
+    avg=((float)sum)/n;
+    printf("sum : %d",sum);
+    printf("avg : %f",avg);
+}
