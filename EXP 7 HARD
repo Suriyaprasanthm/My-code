@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main() {
+    int arr[10], sum = 0, *ptr, n;
+    scanf("%d", &n);
+    for (ptr = arr; ptr < arr + n; ptr++) {
+        scanf("%d", ptr);
+    }
+    for (ptr = arr; ptr < arr + n; ptr++) {
+        sum += *ptr;
+    }
+    printf("The sum of array is: %d\n", sum);
+    return 0;
+}
